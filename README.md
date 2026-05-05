@@ -15,7 +15,18 @@ Using the np.linalg.solve(), we can find the solutions.
 End the program
 ## Program:
 
+```
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np
+matrixA=np.array([[1,3],[2,5]])
+const = np.array([5,-3])
+result=np.linalg.solve(matrixA,const)
+print(result)
+
+```
 ## Output:
+![alt text](image.png)
 ## Result: 
 Thus the solutions for the linear equations are successfully solved using python program
 
